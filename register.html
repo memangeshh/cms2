@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+.container {
+      //position: relative;
+      display: block;
+      margin: 5% auto;
+      width: 22%;
+      padding: 10vh;
+      background: rgba(255, 255, 255, 0.1);
+      //box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.2);
+      border: 1px solid;
+      //z-index: 1;
+      backdrop-filter: blur(10px);
+    }
+
+    .reg-text{
+  margin-top: 0px;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+.data{
+   // position: relative;
+    height: 45px;
+    margin-top: 40px;
+    width:100%;
+   padding-right: 20px;
+
+}
+.data label{
+    font-size: 18px;
+  
+}
+.data input{
+    height: 80%;
+    width: 99%;
+    //box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    font-size: 17px;
+    border: 1px solid silver;
+    border-radius: 4px;
+    
+}
+.gender input{
+  display: inline-block;
+  margin-top: 50px;
+  padding: 2px;
+  margin-left: 23px;
+  
+}
+.register-btn button{
+  margin-top: 20px;
+  //margin-bottom: 5px;
+  padding: 15px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background: #3973f1;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+button:hover{
+  background: #032670;
+  color: white;
+}
+
+</style>
+
+</head>
+<body>
+
+        <div class="container">
+                <div class="reg-text">
+                    Registration Form
+                </div>
+                <form action="#">
+                    <div class="data">
+                        <label>First name</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="data">
+                        <label>Last name</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="data">
+                        <label>Email</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="data">
+                        <label>Mobile number</label>
+                        <input type="password" required>
+                    </div>
+                    <div class="data">
+                        <label>Password</label>
+                        <input type="password" required>
+                    </div>
+
+                    <div class="gender">
+
+                        <lable>Gender:</lable>
+                        <input type="radio" id="male" name="gender" value="male"> Male
+
+                         <input type="radio" id="female" name="gender" value="female"> Female
+                    
+                        <input type="radio" id="other" name="gender" value="other"> Other
+
+                    </div>
+                    <div class="register-btn">
+                        <button type="submit">Register</button>
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    
+</body>
+</html>

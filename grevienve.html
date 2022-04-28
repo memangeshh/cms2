@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Grievences</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+          background: rgba(192,192,192,0.3); 
+          width: 100%; 
+        }
+
+        .wrapper{
+            max-width: 100%;
+            min-height: 5rem;
+            background:linear-gradient(rgb(253, 252, 179),rgb(67, 235, 109));
+        }
+        .griNav{
+            padding: 15px 0px 0px 0px;
+            margin: 0px 0px 0px 30px;
+        }
+
+        .griHead{
+            display: inline-block;
+           // border-bottom: 2px solid rgba(0,255, 255, 0.4);
+            margin: 10px 0px 0px 630px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .studentData label{
+            display: inline-block;
+            text-align: right;
+            width: 200px;
+             margin: 25px 0px 0px 380px;
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        input[type=text]{
+            width: 300px;
+            padding: 5px;
+            border-radius: 1px solid gray;
+        }
+
+        input[type=email]{
+            width: 300px;
+            padding: 5px;
+            border-radius: 1px solid gray;
+        }
+
+        input[type=number]{
+            width: 300px;
+            padding: 5px;
+            border-radius: 1px solid gray;
+        }
+       
+        #userType{
+            width: 313px;
+            padding: 5px;
+            border-radius: 1px solid gray;
+        }
+
+        .btn{
+            //width: 100px;
+            //display:grid;
+             margin:auto;
+            text-align:center;
+           // display: flex;
+            //align-items:center;
+            //justify-content: center;
+            border-radius: 5px;
+            outline: none;
+            //background:rgba(128, 128,128, 0.7);
+        }
+
+        .btn button{
+            margin:auto;
+            background:linear-gradient(rgb(253, 252, 179),rgb(67, 235, 109));
+            padding: 15px 15px 10px 15px;
+            font-size: 20px;
+            margin-top: 10px;
+            border: 0px;
+            border-radius: 3px;
+            
+
+        }
+
+        @media(max-width:700px){
+            body{
+                width: 300px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="griNav">
+            <h1>Wisdom Collage Of Engg.</h1>
+        </div>
+    </div>
+
+    <div class="griHead">
+        <h2>Grievances Form</h2>
+    </div>
+<form>
+    <div class="studentData">
+        <label>User Type:-</label> <select id="userType" name="userType">
+            <option value="St">Select</option>
+            <option value="St">Staff</option>
+            <option value="St">Student</option>
+            <option value="St">Others</option>
+            </select><br>
+        <label>Department:-</label> <select id="userType" name="userType">
+            <option value="St">Select</option>
+            <option value="St">Department Of Computer Science</option>
+            <option value="St">Department Of Information Technology</option>
+            <option value="St">Department Of Artificial Intellegence</option>
+            <option value="St">Department Of Aeronautical Engineering</option>
+            <option value="St">Department Of Electrical Engineering</option>
+            </select><br>
+        <label>Full Name:-</label> <input type="text" name="full Name" placeholder="Type Here"><br>
+        <label>Gender:-</label>  <select id="userType" name="userType"> 
+            <option value="St">Select</option>
+            <option value="St">Male</option>
+            <option value="St">Female</option>
+            <option value="St">Others</option>
+            </select><br>
+        <label>Email Id:-</label> <input type="email" name="email id" placeholder="Type Here"><br>
+        <label>Mobile No:-</label> <input type="number" name="Mobile No" placeholder="Type Here"><br>
+        <label>Subject:-</label> <input type="text" name="Subject" placeholder="Type Here"><br>
+        <label>Description:-</label> <input type="text" name="Description" placeholder="Type Here"><br>
+        <label>Incidence Date:-</label> <input type="text" name="Incidence Date" placeholder="Type Here"><br>
+        <label>Incidence Time:-</label> <input type="text" name="Incidence Time" placeholder="Type Here"><br>
+    </div>
+        <div class="btn" >
+        <button>Submit</button>
+        </div>
+    </form>
+</body>
+</html>

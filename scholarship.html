@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        .wrapper {
+            max-width: 100%;
+            min-height: 5rem;
+            background:linear-gradient(rgb(253, 252, 179),rgb(67, 235, 109));
+            
+        }
+
+        .scholarship h1{
+            padding: 15px 0px 0px 0px;
+           margin: 0px 0px 0px 30px;
+           font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .studentData {
+            margin: 10px 20px 0px 0px;
+            //padding: 10px;
+        }
+
+        .studentData label {
+            display: inline-block;
+            text-align: right;
+            width: 200px;
+            font-size: larger;
+        }
+
+        input[type=text] {
+            margin: 10px;
+            padding: 10px;
+            width: 250px;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+
+        input[type=number] {
+            margin: 10px;
+            padding: 10px;
+            width: 250px;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+
+
+        .btn{
+            width: 100px;
+            background-color: grey;
+            border-radius: 5px;
+            outline: none;
+            padding: 10px;
+            margin: 10px 0px 0px 290px;
+        }
+
+        @media(max-width:700px){
+            .wrapper{
+                width: 300px;
+            }
+
+            .scholarship h1{
+                width: 300px;
+            }
+
+            .studentData{
+                width: 300px;
+            }
+
+
+            .studentData label{
+                width: 300px;
+            }
+
+            input[type=text]{
+                width: 300px;
+            }
+
+            input[type=number]{
+                width: 300px;
+            }
+
+            .btn{
+                width: 300px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="scholarship">
+            <h1>Scholarship Section</h1>
+        </div>
+    </div>
+
+    <div class="studentData">
+        <label>First Name:-</label> <input type="text" name="first Name" placeholder="Type Here"><br>
+        <label>Middel Name:-</label> <input type="text" name="Middel Name" placeholder="Type Here"><br>
+        <label>Last Name:-</label> <input type="text" name="Last Name" placeholder="Type Here"><br>
+        <label>Category:-</label> <select id="userType" name="userType"></select>
+        <option value="St">Select</option>
+        <option value="St">Department Of Computer Science</option>
+        <option value="St">Department Of Information Technology</option>
+       
+        <label>Income:-</label> <input type="text" name="Income" placeholder="Type Here"><br>
+        <label>Mobile No:-</label> <input type="number" name="mobile No"placeholder="Type Here"><br>
+        <label>Address:-</label> <input type="number" name="address"placeholder="Type Here"><br>
+
+          <button class="btn">Submit</button>
+    </div>
+
+
+</body>
+
+</html>

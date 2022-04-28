@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Fee</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .wrapper {
+            max-width: 100%;
+           // min-height: 5rem;
+            background: linear-gradient(#E26962, #EB298E);
+            //border-bottom: 8px solid rgba(11, 120, 140, 0.8);
+            //border-top: 8px solid rgba(11, 120, 140, 0.8);
+        }
+
+        .fee h1 {
+            padding: 20px 0px 20px 0px;
+            margin: 0px 0px 0px 35px;
+        }
+
+        .head {
+            display: inline-block;
+            margin: 20px 0px 0px 530px;
+           // border-bottom: 3px solid green;
+
+        }
+
+        .User {
+           margin: 15px 0px 0px 460px;
+            background-color: #EB298E;
+    
+            max-width: 400px;
+            min-height: 300px;
+            border: 2px solid gray;
+        }
+
+        .userLogIn {
+            background: linear-gradient(#E26962, #EB298E);
+            text-align: center;
+            padding: 10px;
+        }
+
+        .User label {
+            display: inline-block;
+            text-align: right;
+            width: 80px;
+            margin: 50px 0px 0px 45px;
+            font-size: larger;
+        }
+
+        input[type=text] {
+            width: 220px;
+            padding: 5px;
+        }
+
+        input[type=password] {
+            width: 220px;
+            padding: 5px;
+        }
+
+        .btn {
+            width: 70px;
+            background: rgba(128, 128, 128, 0.7);
+            margin: 20px 0px 0px 150px;
+            border-radius: 5px;
+            outline: none;
+            padding: 7px;
+        }
+
+        @media (max-width:700px) {
+            .wrapper {
+                width: 300px;
+            }
+
+
+            .head {
+                width: 300px;
+            }
+
+            .table {
+                width: 300px;
+            }
+
+            .login {
+                width: 300px;
+            }
+
+            input[type=text] {
+                width: 300px;
+
+            }
+        }
+
+        .collagWrapper{
+            padding: 0  20%;
+            margin: 40px 0px 0px 0px;
+            width:100%;
+            //background-color: blue;
+        }
+
+        .table{
+           // width: 100%;
+            border-collapse: collapse;
+        }
+
+        .table thead {
+            background: gray;
+            width:10%;
+        } 
+
+        .table thead tr th{
+            font-size: 20px;
+            font-weight: 600;
+            //width: 100%;
+            letter-spacing: 0.35px;
+            color:white;
+            //opacity: 0.6;
+            padding: 30px;
+            vertical-align: top;
+            border: 5px solid #dee2e685;
+        }
+
+        .table tbody tr td{
+            font-size: 18px;
+            font-weight: normal;
+            letter-spacing: 0.35px;
+            color: black;
+          //  background-color: cadetblue;
+            //opacity: 0.6;
+            padding: px;
+            text-align: center;
+            border: 5px solid #dee2e685;
+        }
+        
+
+        .headwrapper{
+            width: 100%;
+            background-color: #EB298E;
+            //float: left;
+            
+        }
+
+        .headsub{
+            background-color: aquamarine;
+            padding: 5px;
+            width: 50%;
+            float: right;
+            
+        }
+
+        .headsub1{
+            background-color: red;
+            padding: 5px;
+            width: 50%;
+            float: left;
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="fee">
+            <h1>Wisdom Collage Of Engg.</h1>
+        </div>
+    </div>
+     
+    
+    <div class="head">
+        <h2>Fee Section 2021-2022</h2>
+    </div>
+
+    <div class="User">
+        <div class="userLogIn">
+            <h3>User LogIn</h3>
+        </div>
+
+        <div class="login">
+            <label>LogIn Id:- </label> <input type="text" name="studentName" id=""><br>
+            <label>Password:- </label> <input type="password" name="studentName" id="">
+            <button class="btn">Submit</button>
+        </div>
+    </div>
+
+    <div class="collagWrapper">
+                   <table class="table">
+            <thead>
+                <tr>
+                    <th>Sr.No</th>
+                    <th>CasteCatagory</th>
+                    <th>TutionFee</th>
+                    <th>ExamFee</th>
+                    <th>OtherFee</th>
+                    <th>total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Open</td>
+                    <td>11000/-</td>
+                    <td>100/-</td>
+                    <td>100/-</td>
+                    <td>11200/-</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>OBC</td>
+                    <td>5000/-</td>
+                    <td>100/-</td>
+                    <td>100/-</td>
+                    <td>5200/-</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>SC</td>
+                    <td>Nill</td>
+                    <td>100/-</td>
+                    <td>100/-</td>
+                    <td>200/-</td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>ST</td>
+                    <td>Nill</td>
+                    <td>100/-</td>
+                    <td>100/-</td>
+                    <td>200/-</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    
+
+<!--<div class="headwrapper">
+    <div class="headsub">
+        <div class="table">
+            <div class="tableData">
+                <h3>User LogIn</h3>
+            </div>
+    
+            <div class="login">
+                <label>LogIn Id:- </label> <input type="text" name="studentName" id=""><br>
+                <label>Password:- </label> <input type="password" name="studentName" id="">
+                <button class="btn">Submit</button>
+            </div>
+        </div>
+    
+    </div> -->
+
+    <!---<div class="headsub1">
+        <div class="collagWrapper">
+            <table class="table">
+     <thead>
+         <tr>
+             <th>Sr.No</th>
+             <th>CasteCatagory</th>
+             <th>TutionFee</th>
+             <th>ExamFee</th>
+             <th>OtherFee</th>
+             <th>total</th>
+         </tr>
+     </thead>
+     <tbody>
+         <tr>
+             <td>1</td>
+             <td>Open</td>
+             <td>11000/-</td>
+             <td>100/-</td>
+             <td>100/-</td>
+             <td>11200/-</td>
+         </tr>
+
+         <tr>
+             <td>2</td>
+             <td>OBC</td>
+             <td>5000/-</td>
+             <td>100/-</td>
+             <td>100/-</td>
+             <td>5200/-</td>
+         </tr>
+         <tr>
+             <td>3</td>
+             <td>SC</td>
+             <td>Nill</td>
+             <td>100/-</td>
+             <td>100/-</td>
+             <td>200/-</td>
+         </tr>
+
+         <tr>
+             <td>4</td>
+             <td>ST</td>
+             <td>Nill</td>
+             <td>100/-</td>
+             <td>100/-</td>
+             <td>200/-</td>
+         </tr>
+
+     </tbody>
+ </table>
+</div>
+
+    </div>
+</div> -->
+
+   
+</body>
+
+
+
+</html>
